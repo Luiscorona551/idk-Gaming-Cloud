@@ -1,2 +1,3 @@
-# idk-Gaming-Cloud
-The gaming cloud for Idk 10.0
+# Idk Gaming Cloud
+
+Standalone cloud-gaming launcher. External provider links only; no ROM hosting or DRM bypass.
