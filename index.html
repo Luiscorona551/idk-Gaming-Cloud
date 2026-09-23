@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Idk Gaming Cloud — a cloud gaming launcher for playing through supported cloud gaming services.">
+<title>Idk Gaming Cloud</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg"></div>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">IDK</span><span>Gaming Cloud</span></a>
+  <nav>
+    <a href="#home">Home</a><a href="#services">Services</a><a href="#how">How it works</a>
+  </nav>
+  <button class="ghost" id="favoritesBtn">♡ Favorites <span id="favCount">0</span></button>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <div class="eyebrow">IDK CLOUD GAMING</div>
+    <h1>Play from the cloud.</h1>
+    <p>One clean place to launch supported cloud gaming services from your laptop. Your games stay with the service you use.</p>
+    <div class="actions"><a class="primary" href="#services">Explore services <span>→</span></a><button class="secondary" id="learnBtn">How it works</button></div>
+  </div>
+  <div class="cloud-card"><div class="cloud-icon">☁</div><strong>Ready to play</strong><span>Cloud-powered gaming, in one launcher.</span><div class="status"><i></i> Services ready</div></div>
+</section>
+<section class="section" id="services">
+  <div class="section-head"><div><div class="eyebrow">LAUNCHER</div><h2>Cloud gaming services</h2></div><div class="search"><span>⌕</span><input id="search" placeholder="Search services..." aria-label="Search services"></div></div>
+  <div class="grid" id="serviceGrid"></div>
+</section>
+<section class="info" id="how">
+  <div><div class="eyebrow">HOW IT WORKS</div><h2>Your games stream to you.</h2><p>Idk Gaming Cloud is a launcher/interface. It does not host console games or ROMs. Choose a supported provider, sign in with your own account, and launch through that provider.</p></div>
+  <div class="steps"><article><b>01</b><h3>Choose a service</h3><p>Pick the cloud gaming provider you already use.</p></article><article><b>02</b><h3>Sign in</h3><p>Authentication stays with the provider.</p></article><article><b>03</b><h3>Start playing</h3><p>Launch the provider and stream your game.</p></article></div>
+</section>
+</main>
+<footer><span>Idk Gaming Cloud</span><span>Standalone project • Built to connect with Idk 10.0 later</span></footer>
+<div class="modal" id="modal" aria-hidden="true"><div class="modal-box"><button class="close" id="close">×</button><div class="modal-icon" id="modalIcon">☁</div><div class="eyebrow" id="modalTag">CLOUD SERVICE</div><h2 id="modalTitle"></h2><p id="modalText"></p><a class="primary" id="launch" target="_blank" rel="noopener noreferrer">Open service ↗</a><small>You will continue on the service's official site.</small></div></div>
+<script src="app.js"></script>
+</body>
+</html>
